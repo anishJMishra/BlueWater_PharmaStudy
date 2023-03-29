@@ -1,7 +1,7 @@
 import React from 'react';
 import { AppBar, Toolbar, Typography, Button, Box } from '@mui/material';
 
-const Navbar = () => {
+const Navbar = ({ onLogout }) => {
   return (
     <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
     <AppBar position="static">
@@ -15,6 +15,9 @@ const Navbar = () => {
         <Button color="inherit">
           Add Patient
         </Button>
+        <Button color="inherit" onClick={onLogout}>
+            Logout
+          </Button>
       </Toolbar>
     </AppBar>
     </Box>

@@ -21,7 +21,7 @@ const AddPatient = ({ onAddPatient }) => {
 
   return (
     <form onSubmit={handleSubmit}>
-      <Box display="flex" flexDirection="column" gap={2} width="100%">
+      <Box display="flex" p ={2} flexDirection="column" gap={2} width="100%" padding={2}>
         <TextField
           label="Name"
           variant="outlined"
