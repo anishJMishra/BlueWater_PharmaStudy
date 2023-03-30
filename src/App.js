@@ -13,6 +13,10 @@ import JaneHopkinsDoctor from "./pages/JaneHopkinsDoctor";
 import HomePage from "./pages/HomePage";
 import { Route, Routes } from "react-router-dom";
 
+import Patients from './pages/Patients_Bavaria';
+import View_Study from './pages/View_Study_Bavaria';
+import Shipment_Page from './pages/Shipment_Page_Bavaria';
+
 function App() {
   return (
     <div>
@@ -20,6 +24,10 @@ function App() {
         <Routes>
           <Route exact path="/" element={<HomePage />} />
           <Route path="/JaneHopkinsDoctor" element={<JaneHopkinsDoctor />} />
+
+          <Route path="/Patients" element={<Patients />} />
+          <Route path="/View_Study" element={<View_Study />} />
+          <Route path="/Shipment_Page" element={<Shipment_Page />} />
         </Routes>
       </ApolloProvider>
     </div>
